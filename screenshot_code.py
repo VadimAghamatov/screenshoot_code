@@ -3,7 +3,7 @@ from pathlib import Path
 
 
 
-def pycode_to_img(file_path='main.py'):
+def pycode_to_image(file_path='main.py'):
     path = Path(file_path)
 
     if not path.is_file():
@@ -24,7 +24,7 @@ def pycode_to_img(file_path='main.py'):
 
 def main():
     file_path = input('Please enter a filename: ')
-    print(pycode_to_img(file_path=file_path))
+    print(pycode_to_image(file_path=file_path))
 
 if __name__ == '__main__':
     main()
